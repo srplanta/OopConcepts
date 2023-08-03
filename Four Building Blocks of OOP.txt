@@ -1,0 +1,38 @@
+There are 4 basic building blocks of OOP;
+1.	Encapsulation
+		Encapsulation means enclosing data members and related operations into singel unit named class.
+		DataMembers + Methods = Class
+
+2.	Inheritance
+		in inheritance, child class object automatically inherits all the properties and behaviours of
+		parent class object.
+		(Types of Inheritance)
+			i.		Single Level Inheritance
+						One parent class & one child/derived class.
+						Example: (A -> B)
+
+			ii.		Multi Level Inheritance
+						One child class is inherited from one parent and that one parent is also inherited
+						from some other parent class.
+						Example: (A -> B -> C)
+
+			iii.	Hieraracal Inheritance
+						When multiple children inherits properties of single parent class.
+						Means derived classes are siblings.
+						Example: (A -> B ; A -> C ; A -> D)
+
+			iv.		Multiple Inheritance
+						When one child class inherits properties of multiple parent classes.
+						Example: (D -> A,B,C)
+
+3.	Abstraction
+		Abstraction is hiding certain details and showing only essential information to the user.
+		Abstraction can be achieved with either abstract classes or interfaces
+
+4.	Polymorphism
+		Polymorphism means one class/method with many implementations.
+			i.	Static/Compile time polymorphism
+				Example: Method overloading
+
+			ii.	Dynamic/Run time polymorphism
+				Example: Method Overriding
