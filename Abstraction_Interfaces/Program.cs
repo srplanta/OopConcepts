@@ -8,17 +8,12 @@ internal class Program
         Console.WriteLine("------------------------------------------------------------");
         Console.WriteLine();
 
-        //IEmployee partTimeEmployee = new PartTimeEmployee();
-        //partTimeEmployee.ShowEmployee();
-
         IDrawable circle = new Circle();
         IDrawable square = new Square();
         IDrawable rectangle = new Rectangle();
-
         circle.Draw();
         square.Draw();
         rectangle.Draw();
-
         Console.ReadKey();
     }
 }

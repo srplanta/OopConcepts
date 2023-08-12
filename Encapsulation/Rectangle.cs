@@ -6,20 +6,43 @@ using System.Threading.Tasks;
 
 namespace Encapsulation
 {
-    public static class Rectangle
+    public class Rectangle
     {
-        public static double length;
-        public static double width;
+        private double length;
+        private double width;
 
-        public static double GetArea()
+        public double Length
+        {
+            get { return length; }
+            set
+            {
+                if (value > 0)
+                {
+                    length = value;
+                }
+            }
+        }
+
+        public double Width
+        {
+            get { return width; }
+            set
+            {
+                if (value > 0)
+                {
+                    width = value;
+                }
+            }
+        }
+        public double GetArea()
         {
             return length * width;
         }
 
-        public static void DisplayRectangle()
+        public void DisplayRectangle()
         {
-            Console.WriteLine($"Length:\t{length}\n" +
-                $"Width:\t{width}\n" +
+            Console.WriteLine($"Length:\t{Length}\n" +
+                $"Width:\t{Width}\n" +
                 $"Area:\t{GetArea()}");
         }
     }
