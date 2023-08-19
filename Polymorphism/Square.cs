@@ -15,9 +15,20 @@ namespace Polymorphism
             Length = 6;
         }
 
+        public Square(double length)
+        {
+            Length = length;
+        }
+
         public override double Area()
         {
             return Math.Pow(Length, 2);
+        }
+
+        public override string ToString()
+        {
+            return $"Length:\t{Length}\n" +
+                $"Area:\t{this.Area()}";
         }
     }
 }
