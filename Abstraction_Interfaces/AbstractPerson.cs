@@ -20,7 +20,14 @@ namespace Abstraction_Interfaces
         {
             set
             {
-                id = value;
+                if (value == 0)
+                {
+                    Console.WriteLine("Id should be greater than zero.");
+                }
+                else
+                {
+                    id = value;
+                }
             }
             get
             {
@@ -32,7 +39,14 @@ namespace Abstraction_Interfaces
         {
             set
             {
-                name = value;
+                if (string.IsNullOrEmpty(value))
+                {
+                    Console.WriteLine("Name cannot be null or empty.");
+                }
+                else
+                {
+                    name = value;
+                }
             }
             get
             {

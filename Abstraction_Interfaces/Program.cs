@@ -20,7 +20,7 @@ internal class Program
         Console.WriteLine();
 
         Student student = new Student();
-        student.Id = -22;
+        student.Id = 0;     //Id is of uint type. Negative value will give compile time error
         student.Name = "Anas";
         Console.WriteLine($"Id:\t{student.Id}");
         Console.WriteLine($"Name:\t{student.Name}");
